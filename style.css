@@ -1,0 +1,145 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+@font-face
+{
+	src: url('./fonts/Game Of Squids.ttf');
+	font-family: 'Game Of Squids';
+}
+@font-face
+{
+	src: url('./fonts/Autumn Sunrise.ttf');
+	font-family: 'Autumn Sunrise';
+}
+@font-face
+{
+	src: url('./fonts/LEMONMILK-Bold.ttf');
+	font-family: 'LEMONMILK-Bold';
+}
+@font-face
+{
+	src: url('./fonts/ASTERA v2.ttf');
+	font-family: 'ASTERA v2';
+}
+@font-face
+{
+	src: url('./fonts/cs regular.ttf');
+	font-family: 'cs regular';
+}
+@font-face
+{
+	src: url('./fonts/Horizon.otf');
+	font-family: 'Horizon';
+}
+body
+{
+	width: 100%;
+	height:100%;
+	
+}
+
+#back
+{
+	background: url(./images/1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	background-color: black;
+	background-blend-mode: lighten;
+
+	width: 100%;
+	height:100%;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+#back:before
+{
+	position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, rgb(0 0 1 / 60%), #161731b0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+h1
+{
+	font-family: 'Game Of Squids';
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: 5px;
+	color: white;
+
+	background: #000000;
+    background: -webkit-linear-gradient(to right, #000000 0%, #FF1919 50%, #000000 100%);
+    background: -moz-linear-gradient(to right, #000000 0%, #FF1919 50%, #000000 100%);
+    background: linear-gradient(to right, #000000 0%, #FF1919 50%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3
+{
+	font-family: 'Game Of Squids';
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 2px;
+
+	color: whitesmoke;
+	text-decoration: line-through;
+	text-decoration-color: skyblue;
+	width: 100%;
+	position: relative;
+	bottom:30px;
+}
+
+#back>img
+{
+	position: relative;
+	left: 320px;
+	margin: 15px 0;
+	border-radius: 50%;
+	opacity: 0.9;
+	background-color: white;
+	background-blend-mode: overlay;
+	width: 50%;
+}
+
+
+/*---------------content----------*/
+.content
+{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+.left p
+{
+	font-size: 1.5em;
+	font-family: 'Bebas Neue', cursive;
+    /*font-family: 'Grechen Fuemen', cursive;*/
+    padding: 40px 40px;
+    text-align: justify;
+    line-height: 37px;
+    text-indent: 70px;
+
+
+	color: white;
+}
+
+.right img 
+{
+	border-radius: 10px;
+	padding-top: 40px;
+	width: 400px;
+	height: 500px;
+}
+
+
